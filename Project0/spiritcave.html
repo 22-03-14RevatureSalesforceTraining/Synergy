@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Spirit Cave!</title>
+    <script src="spiritcave.js"></script>
+    <link rel="stylesheet" href="spiritcave.css">
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <h1>The Mystic's Cave</h1>
+            <p>The journey outwards begins with the first step, and the journey inwards with the first dream.</p>
+        </header>
+        <div class="stepsRow">
+            <div class="firstStep step" onclick="walking(this)">
+                <h2>Approach</h2>
+                <p>
+                    Lost in a forest, you spot an old wise woman sitting by a tall fire. You are cold, and confused but
+                    the warmth of her fire draws you in.
+                </p>
+            </div>
+            <div class="secondStep step" onclick="walking(this)">
+                <h2>Sit</h2>
+                <p>
+                    With a warm smile, she greets you and with a quick gesture she offers you a seat by the fire.
+                </p>
+            </div>
+            <div class="thirdStep step" onclick="walking(this)">
+                <h2>Heed</h2>
+                <p>
+                    She speaks to you of the trail inward. The journey of the mind to find truth, and the lifelong quest
+                    to find yourself. Do you heed her words?
+                </p>
+            </div>
+        </div>
+        <div class="finalStep">
+            <p id="delveText">
+                She instructs you to go now, alone into the mystic's cave where deep within, your soul's anima is bound to manifest.
+                Commune now with the spirit creature inside!
+            </p>
+            <button id="delveButton" onclick="delve()">Commune!</button>
+
+        </div>
+        <div id="delve">
+            <img id="imageContainer"></img>
+
+            <ul id="attributeList">
+                <p id="spiritAnimal">Your spirit animal is a</p>
+                <p id="coolFacts">Here's a list with some cool facts about </p>
+                
+            </ul>
+            
+
+
+
+        </div>
+        <div class="jasonStatham">
+            <button id="coolButton" onclick="coolJason()">Does Jason Statham approve?</button>
+         </div>
+         <div id="jasonStathamApproves">
+            <img class= "jasonThumbDog"id="thumbsUp" src="https://sadanduseless.b-cdn.net/wp-content/uploads/2020/04/thumbs-up-guns13.jpg" alt="Jason Statham thinks that's a cool anima!">
+            <p>He does! He thinks your animal is super cool and loves this webpage. Here's a picture of his spirit animal too! If you ask me his is a bit <strong><em>boring!</em></strong></p>
+            <img class="jasonThumbDog"id="jasonDog" src="" alt="Jason's Dog">
+
+
+        </div>
+    </div>
+
+</body>
+
+
+</html>

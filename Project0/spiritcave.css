@@ -1,0 +1,234 @@
+.page {
+  display: flex;
+  flex-flow: column;
+  width: 1500px;
+  margin: auto;
+  
+  
+}
+
+
+
+header {
+  color: aliceblue;
+  background: url("pictures/headerpic.webp");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 300px;
+  text-align:center;
+  border-radius: 100px;
+  text-shadow: 1px 0 0 black, 1px 1px 0 black, 0 1px 0 black, -1px 1px 0 black, -1px 0 0 black, -1px -1px 0 black, 0 -1px 0 black, 1px -1px 0 black;  
+
+}
+
+header h1 {
+  color: white;
+  font-size: 100px;
+  text-decoration:overline;
+
+}
+
+.stepsRow {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  
+  padding: 10px 0;
+  padding-bottom: 40px;
+}
+
+.step {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
+  width: 450px;
+  height: 450px;
+  border-radius: 20%;
+}
+
+.step p {
+  display: flex;
+  font-size: 24px;
+  width: 80%;
+  font-family: sans-serif;
+  color: white;
+  align-self: center;
+  margin-top: 60px;
+  z-index: 100;
+  font-weight:bold;
+  text-shadow: 1px 0 0 black, 1px 1px 0 black, 0 1px 0 black, -1px 1px 0 black, -1px 0 0 black, -1px -1px 0 black, 0 -1px 0 black, 1px -1px 0 black;  
+}
+.step h2 {
+  color: white;
+  font-size: 60px;
+  align-self: center;
+  visibility:hidden;
+  margin-top: 150px;
+  text-shadow: 2px 0 0 black, 2px 2px 0 black, 0 2px 0 black, -2px 2px 0 black, -2px 0 0 black, -2px -2px 0 black, 0 -2px 0 black, 2px -2px 0 black;
+  font-family:sans-serif;
+  
+}
+
+div.firstStep {
+  background-image: linear-gradient(transparent 60%, white 90%),
+    url("pictures/please approach.jpg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+div.secondStep {
+  background-image: linear-gradient(transparent 60%, white 90%),
+    url("pictures/please sit.jpg");
+  background-position: center;
+  background-size: cover;
+  visibility: hidden;
+  
+  
+}
+
+div.thirdStep {
+  background-image: linear-gradient(transparent 60%, white 90%),
+    url("pictures/please heed.jpg");
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  visibility: hidden;
+  
+
+}
+
+div.step:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+div.step:hover h2 {
+  visibility:visible;
+}
+div.step:hover p {
+  margin-top: 150px;
+  display:none;
+}
+div.step:active {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+div.finalStep {
+  background-color: transparent;
+  align-self:center;
+  color: white;
+  visibility:hidden;
+  display:flex;
+  flex-flow:column;
+  align-items:center;
+  height:auto;
+  width:800px;
+  position: absolute;
+  top:450px;
+  font-weight:bold;
+  text-shadow: 1px 0 0 black, 1px 1px 0 black, 0 1px 0 black, -1px 1px 0 black, -1px 0 0 black, -1px -1px 0 black, 0 -1px 0 black, 1px -1px 0 black;
+  font-size: 24px;  
+  font-family:sans-serif;
+  }
+
+
+
+#delve {
+  border: 5px black;
+  display:flex;
+  flex-flow:row;
+  justify-content:space-evenly;
+  height:auto;
+  width:auto;
+  visibility:hidden;
+  font-weight:bold;
+  text-shadow: 1px 0 0 black, 1px 1px 0 black, 0 1px 0 black, -1px 1px 0 black, -1px 0 0 black, -1px -1px 0 black, 0 -1px 0 black, 1px -1px 0 black;
+  padding: 0px 20px;  
+  
+
+}
+
+#delveButton{
+  width:100px;
+  height:50px;
+  border-radius: 50px;
+  background-color:brown;
+  color:aliceblue;
+  font-weight:bold;
+  border-color:red;
+}
+
+
+
+#delveButton:hover {
+  cursor: pointer;
+}
+
+#imageContainer {
+width: 500px;
+height: 500px;
+border: 5px black double;
+border-radius:10%;
+
+
+}
+
+#attributeList {
+  font-size:40px;
+  padding:0px 40px;
+  margin:0px;
+  width:500px;
+  height:500px;
+  display:flex;
+  flex-flow:column;
+  justify-content:center;
+  align-content:flex-start;
+  font-size: 24px;
+  font-family: sans-serif;
+  color: white;
+  font-weight:bold;
+  text-shadow: 1px 0 0 black, 1px 1px 0 black, 0 1px 0 black, -1px 1px 0 black, -1px 0 0 black, -1px -1px 0 black, 0 -1px 0 black, 1px -1px 0 black; 
+  
+
+}
+#coolButton {
+  width: 100px;
+  height: 100px;
+  border-radius:50%;
+  display:none;
+  position:absolute;
+  right:500px;
+}
+
+#coolButton:hover{
+cursor:pointer;
+font-weight:bold;
+background-color:brown;
+}
+
+.jasonThumbDog{
+  width:250px;
+  height:250px;
+  border: 5px black double;
+  border-radius: 10%;
+}
+
+#jasonStathamApproves {
+  display:flex;
+  visibility:hidden;
+  flex-flow:row;
+  justify-content: space-evenly;
+  font-size:20px;
+  font-family:Helvetica;
+  padding:50px;
+
+}
+#jasonStathamApproves p{
+  align-self:flex-start;
+  padding:100px;
+}
+.jasonApproves {
+  display:none
+}
+
