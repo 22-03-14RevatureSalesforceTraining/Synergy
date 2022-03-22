@@ -1,0 +1,198 @@
+/**behavior.js
+ * Reis Taylor
+ * Created March 17th, 2022
+ * Last updated March 20th, 2022
+ * "How to code a carousel with HTML, CSS, and Javascript from Scratch"
+ * By Kevin Powell
+ * https://www.youtube.com/watch?v=gBzsE0oieio
+ */
+.wrapperGrid {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*1fr stands for one fraction of ...*/
+    grid-template-rows: 1fr 1fr;
+    gap: 15px; /*the gutters*/
+}
+
+body {
+    background-color: black;
+}
+
+.titleContainer {
+    background-color: blanchedalmond;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.button-group {
+    position: relative;
+    top: 30%;
+}
+
+.nextButton{
+    border: 2px solid #21a172;
+    background-color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    color: green;
+    border-radius: 5px;
+}
+
+.backButton {
+    border: 2px solid #21a172;
+    background-color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    color: green;
+    border-radius: 5px;
+}
+
+.nextButton:hover{
+    background-color: #21a172;
+}
+
+.backButton:hover{
+    background-color: #21a172;
+}
+
+.intro {
+    justify-content: center;
+    color: blue;
+    margin: 15px;
+
+}
+/******************************************************************************************************/
+.carousel {
+    position: relative;
+    background-color: blue;
+    max-width: 740px;
+    height: 500px;
+    text-align: center;
+    color: rgb(114, 228, 199);
+}
+
+.carousel__image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: scale-down;
+    
+}
+
+.carousel__track-container {
+    position: relative;
+    background: lightgreen;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel__track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: transform 250ms ease-in;/*not *mine*/
+}
+
+.carousel__slide {
+    position: absolute; /*moves all images on top of one another*/
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/****************************************************************************************************/
+.blogLinks {
+    background-color: blue;
+    min-height: 250px;
+    text-align: center;
+    color: rgb(114, 228, 199);
+}
+
+.blogger h4 {
+    font-size: x-large;
+}
+
+.blogger a{
+    color: whitesmoke;
+    font-size: x-large;
+}
+.Alex{
+    position: relative;
+    float: left;
+    top: 0px;
+    height: 310px;
+}
+/****************************************************************************************************/
+.blogSummary {
+    min-height: 250px;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+#divAqi {
+    color: black;
+    font-size: 60px;
+}
+
+#divCityName{
+    color: black;
+    font-size: 35px;
+}
+
+.country {
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    max-height: 250px;
+    margin: 0;
+}
+/*
+.country__img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    background-color: #eee;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+.country__data {
+    position: relative;
+    padding: 2px 3px 2px 3px;
+  }
+
+.container {
+    display: flex;
+    flex-flow: row;
+    justify-content: start;
+  }
+
+  .countries {
+    display: relative;
+    height: 70%;
+    width: 50%;
+    font-size: 15px;
+   }
+ */
+/*
+
+  .country__name {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+
+  .country__region {
+    font-size: 15px;
+    margin-bottom: 0;
+    color: #888;
+  }
+
+  .country__row span {
+    display: inline-block;
+    margin-right: 0;
+    font-size: 15px;
+  }

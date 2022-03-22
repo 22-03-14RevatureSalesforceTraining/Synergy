@@ -1,0 +1,98 @@
+<!--behavior.js
+ * Reis Taylor
+ * Created March 17th, 2022
+ * Last updated March 20th, 2022
+ * This page was created to introduce Bangkok both visually,
+ * and through an introduction to someone passionate about
+ * blogging and photography
+ * The majority of this work came from knowledge gleaned as a Revature
+ * trainee, but javascript portion ultimately became something not my own.
+ * after spending a morning with a youtube video titled:
+ * "How to code a carousel with HTML, CSS, and Javascript from Scratch"
+ * By Kevin Powell
+ * https://www.youtube.com/watch?v=gBzsE0oieio
+ * The javascript used for my carousel was very closely modeled his example.
+ * Several of my CSS selectors were subsequently changed to match his
+ * example after watching/re-watching/re-re-watching his video
+ * The scope of my project narrowed, and HTML was shed to a single destination. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="style.css">
+    <title>Reis Taylor Project-Zero</title>
+</head>
+<body>
+    <div class="wrapperGrid"> 
+        <div class="titleContainer">
+            <h3>Thailand's Capital City</h3>
+            <h4>Stories from a fellow traveler</h4>
+            <article class="intro">
+                <p>
+                    How is the thought of a trip to Thailand? It must sound
+                    pretty good if you made it to this page. You have good
+                    taste in destinations, but do you have the whole story.
+                    I spent most of the last eleven years living in Thailand
+                    and I can tell you that while it's my favorite spot on 
+                    Earth, it's also a mixed-bag that is likely half a world 
+                    away from where you're sitting. A trip like this should 
+                    begin with research. Perhaps your research will begin here.
+                </p>
+                <br>
+                <p>Use the buttons bellow to catch a few glimpses of Thailand's capital.</p>
+            </article>
+            <div class="button-group">
+                <button class="backButton">Back</button>
+                <button class="nextButton">Next</button>
+            </div>
+        </div>
+        <div class="carousel">
+            <div class="carousel__track-container">
+                <ul class="carousel__track">
+                    <li class="carousel__slide current-slide">
+                        <img id= "img1" class="carousel_image" src="https://www.swedishnomad.com/wp-content/images/2016/05/Bangkok-reseguide.jpg" 
+                            alt="Bangkok">
+                    </li>
+                    <li class="carousel__slide">
+                        <img id="img2" class="carousel_image" src="https://i.natgeofe.com/n/f12e6dc0-3515-45cd-9657-7c0d1a87a512/street-bangkok-thailand.jpg" 
+                            alt="Bangkok">
+                    </li>
+                    <li class="carousel__slide">
+                        <img id="img3" class="carousel_image" src="https://cdn.cnn.com/cnnnext/dam/assets/170517105215-night-market-in-bangkok-thailand.jpg" 
+                            alt="Bangkok">
+                    </li>
+                    <li id="img3" class="carousel__slide"> 
+                        <img class="carousel_image" src="https://www.ahstatic.com/photos/6835_ho_00_p_1024x768.jpg" 
+                            alt="Bangkok">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="blogLinks">
+            <div class="Alex">
+                <img class="Alex" src="Swedish-Nomad-travel-blogger.jpg" alt="">
+            </div>
+            <div class="blogger">
+                <h4>Bangkok - Alex Waltner</h4>
+                <a href="https://www.swedishnomad.com/bangkok-travel-guide/">
+                    Check out Alex's blog on this bustling city</a>
+            </div> 
+        </div>
+        <div class="blogSummary">
+            <div class="summary">
+                <div class="country">
+                  <h1>The air quality index in</h1>
+                  <div id="divCityName"></div>
+                  <h1>is currently:</h1>
+                  <div id="divAqi"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="behavior.js"></script>
+    <script src="apiForAQI.js"></script>
+</body>
+</html>
