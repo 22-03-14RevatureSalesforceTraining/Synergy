@@ -45,9 +45,9 @@ function onFetchSuccess(data) {
 fetch('https://zoo-animal-api.herokuapp.com/animals/rand')
     .then(response => response.json())
     .then(data => onFetchSuccess(data))
-    .catch (error); {
+    /*.catch (error); {
         console.log("Fetch API failed")
-    }
+    }*/
 
 //Reveal each card as we go along the page.
 
@@ -65,46 +65,6 @@ function walking(value) {
     }
 }
 
-//this is old code//
-
-//second version
-
-/*function walking(value) {
-    let whichStep = value;
-
-    if (whichStep === 1) {
-        
-
-        document.querySelector('.secondStep').style.visibility = "visible";
-    }
-    else if (whichStep === 2) {
-
-        document.querySelector('.thirdStep').style.visibility = "visible";
-    }
-    else if (whichStep === 3) {
-
-        document.querySelector('.finalStep').style.visibility = "visible";
-    }
-    else {
-        console.log('Something went screwy!')
-    }
-
-
-}*/
-//First version.
-/*function walkOne() {
-    document.querySelector('.secondStep').style.visibility = "visible";
-
-};
-
-function walkTwo() {
-    document.querySelector('.thirdStep').style.visibility = "visible";
-};
-
-function walkThree() {
-    document.querySelector('.finalStep').style.visibility = "visible";
-
-}*/
 
 //On pressing final step, reveal the div with the animal spirit results.
 function delve() {
