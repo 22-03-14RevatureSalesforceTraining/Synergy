@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tim's WORLD!</title>
+        <meta name="author" content="Tim Hinga">
+        <meta name="date_created" content="03-18-2022">
+        <meta name="date_modified" content="03-22-2022">
+        <meta name="description" content="Webpage about me and weather information">
+        <link rel="stylesheet" href="project0.css">
+        <script src="project0.js"></script>
+    </head>
+
+    <body>
+        <header><h1>Tim's <span class="world">WORLD!</span></h1></header>
+
+        <div class="slideshowContainer">
+            <img class="slidePic" src="./project0_pics/kelsAndMe0.JPEG" alt="Kelsey and Tim">
+            <img class="slidePic" src="./project0_pics/kelsAndMe2.jpeg" alt="Kelsey and Tim" >
+            <img class="slidePic" src="./project0_pics/kelsAndMe1.jpeg" alt="Kelsey and Tim">
+            <img class="slidePic" src="./project0_pics/jess.jpeg" alt="My dog, Jess">
+            <img class="slidePic" src="./project0_pics/jessAndMe1.jpeg" alt="Jess and Tim">
+            <img class="slidePic" src="./project0_pics/jessAndKels.jpeg" alt="Kelsey and Jess">
+            <img class="slidePic" src="./project0_pics/jessAndMe0.JPG" alt="Jess and Tim">
+            <img class="slidePic" src="./project0_pics/friends.JPG" alt="Tim with friends">
+            <img class="slidePic" src="./project0_pics/alexAndMe.jpeg" alt="Alex and Tim">
+
+            <a class="prev">&laquo; Previous</a>
+            <a class="next">Next &raquo;</a>
+        </div>
+
+        <div class="aboutMe">
+            <h2>About Me</h2>
+            <ul>
+                <li>I am 25 years old, turning 26 in May.</li>
+                <li>I graduated Western Michigan University with a 
+                    Bachelor's in Computer Science. </li>
+                <li>My best friends are my girlfriend, Kelsey, and my
+                    dog, Jess (Pitbull/Boxer mix). </li>
+                <li>My hobbies are gaming, hanging
+                    out with friends, sports, and poker. </li>
+                <li>Before I started at Revature I was playing online 
+                    poker "professionally" </li>
+            </ul>
+            </div>
+    
+        <div class="futureGoals">
+            <h2>My Future Goals</h2>
+            <p> Revature is just the beginning! They have given me this
+                amazing opportunity to kickstart my career. I hope to grow 
+                from this and become a Senior Software Engineer (or Salesforce Architect?)
+                in the future. This will give me the financial stability to do
+                something I've always wanted to do: travel the world! I can also
+                combine this with one of my favorite pastimes, poker. There are many
+                major poker tournaments in big cities across the world: 
+                <a href="https://www.pokerstarslive.com/ept/prague/">Prague</a>, 
+                <a href="https://www.pokerstarslive.com/espt/madrid/">Madrid</a>, and 
+                <a href="https://www.pokerstarslive.com/ept/montecarlo/">Monte Carlo</a>,
+                just to name a few. With a solid career to support me, I can finally
+                participate in some of these events that I have been dreaming of for almost
+                a decade. Not to mention the sites that I will see! I am excited to start 
+                this phase of my life and I thank you for reading this and being part of it.
+            </p>
+        </div>
+
+        <div class="travelHelp">
+
+            <h2>My Travel Help!</h2>
+            <h3>Never get caught in the rain! Use this section to check the 5-day
+                weather forecast in a city.
+            </h3>
+
+            <form id="input">
+                <label for="city">Where in the world do you want to go:</label>
+                <input type="text" id="city" name="city" placeholder="Enter city name">
+            </form>
+
+            <button id="apiCaller" type="button">Get Weather Info</button>
+            <br> <br>
+            <table id="weather">
+                <thead>
+                    <tr>
+                        <th>City</th>
+                        <th>Date</th>
+                        <th>High(&#176;F)</th>
+                        <th>Low(&#176;F)</th>
+                        <th>Conditions</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </body>
+</html>

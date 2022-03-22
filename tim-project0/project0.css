@@ -1,0 +1,100 @@
+h1 { 
+    text-align:center;
+    color: #38F2FF;
+    margin-top:0;
+    height: 75px;
+    line-height:75px;
+}
+
+/*Give world an animation that completes over 1 second */
+.world { display: inline-block;}
+.world:active {
+    animation:rotate 1s linear;
+}
+
+/*Rotate the element in these intervals */
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+
+    50% { transform: rotate(180deg); }
+
+    100%{ transform: rotate(360deg) }
+} 
+
+body {
+    background-color: #4F0481;
+    color:white;
+}
+
+.slideshowContainer {
+    display:flex;
+    justify-content:space-evenly;
+    max-height: 300px;
+}
+
+.slidePic {
+    width:20%;
+    display: none;  /* Hides the images by default */
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    align-self:center;
+    color: #38F2FF;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+
+.prev {
+    order:-3 /*Put the previous button before the slides */
+}
+
+.aboutMe {
+    display:inline-block;  /*Makes the list an inline element instead of block */
+    width:40%;
+    font-size:large;
+    line-height: 150%;
+}
+.futureGoals { /*Makes this an inline element despite containing a h2 and p */
+    display:inline-block;
+    width:55%;
+    text-align:left;
+    font-size: large;
+    line-height: 120%;
+    vertical-align: top;
+
+}
+
+h2 {
+    text-align:center;
+    color: #38F2FF;
+}
+
+p { text-indent:30px; }
+
+a { color: #C6FBF7;  }
+
+h3 {
+    text-align: center;
+    color:#38F2FF
+}
+table {
+    margin-left:auto;
+    margin-right:auto;
+    border-spacing: 10px;
+    border-collapse: collapse;
+}
+table td, table th {
+    border: 1px solid black;
+    padding-left: 20px;
+    text-align: center;
+}
+
+form {
+    font-size: large;
+    display:inline;
+}
+
+
