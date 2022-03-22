@@ -1,0 +1,37 @@
+body {
+                background-color:darkgray;
+            }
+            p.name {
+                font-family: cursive;
+                font-size: 20px;
+                background-color: black;
+                color: white;
+                
+            }
+            p.album{
+                font-family: sans-serif;
+                color: black;
+            }
+            h2 {
+                padding: 23px;
+                font-size: 90px;
+                font-style: italic;
+                background-color: black;
+                color: white;
+                width: 1450px;
+                
+            }
+            th {
+                font-size: 50px;
+                color: white;
+                background-color: black;
+            }
+            img {
+                border-style: solid;
+            }
+            button {
+                background-color: black;
+                color: white;
+                font-size: 20px;
+                margin: auto;
+            }
