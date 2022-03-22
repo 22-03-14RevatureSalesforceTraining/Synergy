@@ -1,4 +1,4 @@
-/**behavior.js
+/**style.css
  * Reis Taylor
  * Created March 17th, 2022
  * Last updated March 20th, 2022
@@ -150,49 +150,3 @@ body {
     max-height: 250px;
     margin: 0;
 }
-/*
-.country__img {
-    width: 200px;
-    height: 100px;
-    object-fit: cover;
-    background-color: #eee;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-
-.country__data {
-    position: relative;
-    padding: 2px 3px 2px 3px;
-  }
-
-.container {
-    display: flex;
-    flex-flow: row;
-    justify-content: start;
-  }
-
-  .countries {
-    display: relative;
-    height: 70%;
-    width: 50%;
-    font-size: 15px;
-   }
- */
-/*
-
-  .country__name {
-    font-size: 15px;
-    margin-bottom: 0;
-  }
-
-  .country__region {
-    font-size: 15px;
-    margin-bottom: 0;
-    color: #888;
-  }
-
-  .country__row span {
-    display: inline-block;
-    margin-right: 0;
-    font-size: 15px;
-  }
