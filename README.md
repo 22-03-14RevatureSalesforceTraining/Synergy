@@ -1,1 +1,1 @@
-
+This is the branch for Tim Hinga's Project 2 files. Contains file for the trigger, trigger handler, trigger test class, visualforce page controller, controller test class, and visualforce page markup. Also includes the ERD for our organization. On top of these things, I helped in the creation of many flows and an approval process for complete automation. Additionally I helped in the design and set up of the organization and its security.
