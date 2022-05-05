@@ -1,0 +1,45 @@
+<apex:page controller="TopAccountsController">
+    <apex:slds />
+    
+    <Apex:pageBlock title="Top Accounts by Revenue">
+    	<div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_2-of-5">
+           		<apex:pageBlockTable value="{!TopAccounts}" var="acc">
+                    <apex:facet name="header">Top Accounts</apex:facet>
+                    <apex:column headerValue="Account Name">
+                        <apex:outputLink value="/{!acc.id}">{!acc.Name}</apex:outputLink>
+                    </apex:column>
+            		<apex:column value="{!acc.Total_Revenue__c}"/>
+            		<apex:column value="{!acc.Total_Shoes_Purchased__c}"/>
+        		</apex:pageBlockTable>
+            </div>
+            <div class="slds-col">
+        		<apex:form >
+                	<apex:pageBlockTable value="{!TopBranches}" var="branch" id="branch_list">
+                    	<apex:facet name="header">Top Branches</apex:facet>
+        				<apex:column value="{!branch.Account__r.Name}">
+                        	<apex:facet name="header">
+                        		<apex:commandLink action="{!sortByAccount}" reRender="branch_list">Account Name</apex:commandLink>
+                        	</apex:facet>
+                    	</apex:column>
+            			<apex:column value="{!branch.Name}"/>
+            			<apex:column value="{!branch.Total_Order_Revenue__c}">
+                    		<apex:facet name="header">
+                        		<apex:commandLink action="{!sortByTotalRevenue}" reRender="branch_list">Total Revenue</apex:commandLink>
+                        	</apex:facet>
+                    	</apex:column>
+            			<apex:column value="{!branch.Total_Shoes_Purchased__c}"/>
+        			</apex:pageBlockTable>
+                </apex:form>
+           </div>
+        </div>
+       
+    </Apex:pageBlock>
+    <ul>
+        <li>&emsp;Average Revenue of Accounts: $<apex:dynamicComponent componentValue="{!AverageRevenue}"/></li>
+        <li>&emsp;Total Revenue from Accounts: $<apex:dynamicComponent componentValue="{!TotalRevenue}"/></li>
+        <li>&emsp;Average # of Shoes per Account: <apex:dynamicComponent componentValue="{!AverageShoes}"/></li>
+    </ul>
+        
+    
+</apex:page>

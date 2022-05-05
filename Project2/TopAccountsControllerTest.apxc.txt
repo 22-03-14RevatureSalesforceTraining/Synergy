@@ -1,0 +1,29 @@
+@isTest
+public class TopAccountsControllerTest {
+    /* @TestSetup static void setup() {
+        List<Account> accs = new List<Account>();
+        List<Branch__c> brnchs = new List<Branch__c>();
+        for (Integer i=0;i<100;i++) {
+            accs.add(new Account(Name='acc#'+i));
+            for (Integer j=0;j<5;j++) {
+                brnchs.add(new Branch__c(Name='brnch#'+i+j, Account__c=accs[i].id, Total_Order_Revenue__c=(i), Total_Shoes_Purchased__c = (i+j)));
+            }
+        }
+        insert accs;
+        insert brnchs;
+    }*/
+    
+    @isTest
+    public static void testSort() {
+		TopAccountsController testVar = new TopAccountsController();
+        testVar.sortByAccount();
+        System.AssertEquals(testVar.sortByName,true);
+    }
+    @isTest 
+    public static void testRevenueSort() {
+    	TopAccountsController testVar = new TopAccountsController();
+        testVar.sortByName = true;
+        testVar.sortByTotalRevenue();
+        System.AssertEquals(testVar.sortByName,false);
+    }
+}
