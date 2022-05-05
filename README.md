@@ -1,13 +1,16 @@
 POSITIVE ELECTRICTY:
+---------------------------------------------------------------------------------------------
 
 
 Project Description
+---------------------
 
 Created a SF application which would sell electronic gadgets to Individuals and Organizations.
 Designed to provide support to customer for product related issues.
 Designed to provide service in multiple countries such as USA,UK n India
 
-Technologies Used:
+Technologies Used
+-------------------
 
 Salesforce Salesforce Declarative Tools
 Lead/Case Assignment
@@ -16,7 +19,8 @@ Automation tools
 Lead Approval
 Web to Lead/Case
 
-Features:
+Features
+-----------
 
 Implemented Role Hierarchy : SalesManager,Sales and Service Representatives
 Created respective profile for each of the Roles.
@@ -29,5 +33,6 @@ Dynamic forms
 Email to case
 Custom Report and Dashboard
 
-To-do :
+To-do
+------
 Future iterations of the project will see a greater use of flows and automation to improve org best practices.
