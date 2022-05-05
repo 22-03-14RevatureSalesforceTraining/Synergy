@@ -12,7 +12,9 @@ Visualforce & custom Apex controllers<br/>
 Flows, approval process, and trigger to completely automate process of designing custom shoes <br/>
 Triggers to ensure data is valid and complete<br/>
 Custom visualforce pages to display important information<br/>
-Adequate and effective test classes for all Apex code<br/>
+<br/>
+<b>To Do:</b><br/>
+Finish designing adequate and effective test classes for all Apex code<br/>
 ***
 <b>Contributors</b>
 Carlos Concepcion, Reis Taylor, Deepika Chandran, Timothy Hinga
